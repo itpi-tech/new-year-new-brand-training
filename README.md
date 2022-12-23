@@ -5,6 +5,11 @@ Selamat datang di respository project new year new brand training PT ITPI Techno
 
 
 
+## Materi
+
+[Link Slideshow](https://docs.google.com/presentation/d/1DAzOu9I2lY_XQba1WpKcp71BgVji0YEmIpQCAvgs7w0/edit?usp=sharing)
+
+
 
 ## Demo
 
