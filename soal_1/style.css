@@ -1,0 +1,129 @@
+/* 
+=================================================
+ HEADER
+=================================================
+*/
+.header {
+    display: flex;
+    align-items: stretch;
+    background-color: #F5F8FA;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.avatar img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.userinfo h1 {
+    margin: 0px 0px 10px 0px;
+}
+
+.userinfo a {
+    text-decoration: none;
+    color: #707070;
+}
+
+
+/* 
+=================================================
+ CONTENT
+=================================================
+*/
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content .item {
+    flex-basis: 33.333%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    aspect-ratio: 1/1;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.satu {
+    background-color: #0FAE53;
+}
+
+.dua {
+    background-color: #FFC700;
+}
+
+.tiga {
+    background-color: #009EF7;
+}
+
+.empat {
+    background-color: #D9214E;
+}
+
+.lima {
+    background-color: #884CB8;
+}
+
+.enam {
+    background-color: #ED58E7;
+}
+
+
+/* 
+=================================================
+ SMALL SCREEN
+=================================================
+*/
+@media (max-width: 575.97px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content .item {
+        flex-basis: 50%;
+        flex-grow: 1;
+    }
+
+    .satu {
+        order: 2;
+    }
+
+    .dua {
+        order: 1;
+    }
+
+    .tiga {
+        order: 4;
+    }
+
+    .empat {
+        order: 3;
+    }
+
+    .lima {
+        display: none !important;
+    }
+
+    .enam {
+        display: none !important;
+    }
+}

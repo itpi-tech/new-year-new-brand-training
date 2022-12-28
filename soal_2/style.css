@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+}
+
+
+/* 
+=================================================
+ CONTAINER
+=================================================
+*/
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #181C32;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.sidebar .sidebar-header {
+    display: flex;
+}
+
+.sidebar .sidebar-header .avatar {
+    box-sizing: border-box;
+    width: 30%;
+}
+
+.sidebar .sidebar-header .avatar img {
+    width: 100%;
+}
+
+.sidebar .sidebar-header .userinfo {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.sidebar .sidebar-header .userinfo h1 {
+    color: #fff;
+    margin: 0px 0px 5px 0;
+    font-size: 24px;
+}
+
+.sidebar .sidebar-header .userinfo a {
+    color: #fff;
+    margin: 0px 0px 10px 0;
+}
+
+.sidebar .sidebar-menu ul {
+    list-style: none;
+    padding: 5px;
+}
+
+.sidebar .sidebar-menu ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 0;
+}
+
+/* 
+=================================================
+ WRAPPER
+=================================================
+*/
+.wrapper {
+    flex-grow: 1;
+    display: flex;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.wrapper .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.col-satu {
+    background-color: #0FAE53;
+}
+
+.col-dua {
+    background-color: #009EF7;
+}
+
+
+/* 
+=================================================
+ SMALL SCREEN
+=================================================
+*/
+@media (max-width: 575.97px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .sidebar .sidebar-header {
+        align-items: center;
+        justify-content: center;
+        background-color: #181C32;
+        padding: 15px;
+    }
+
+    .sidebar .sidebar-menu {
+        margin-top: 10px;
+        background-color: #181C32;
+        padding: 10px;
+    }
+
+    .sidebar .sidebar-header .avatar {
+        width: 30%;
+    }
+
+    .sidebar .sidebar-header .userinfo {
+        width: 50%;
+    }
+
+    .sidebar .sidebar-menu {
+        text-align: center;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        padding: 10px;
+        padding-top: 0;
+    }
+
+    .wrapper .col-satu {
+        order: 2;
+    }
+
+    .wrapper .col-dua {
+        order: 1;
+        margin-bottom: 10px;
+    }
+}

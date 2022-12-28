@@ -34,7 +34,6 @@ body {
 ======================================================
 */
 .wrapper {
-    position: relative;
     overflow-x: hidden;
     max-height: 100%;
     width: 75%;
@@ -152,10 +151,12 @@ body {
     }
 
     .wrapper .row-bottom .col-bottom-left {
+        order: 2;
         width: 100%;
     }
 
     .wrapper .row-bottom .col-bottom-right {
+        order: 1;
         width: 100%;
     }
 }
